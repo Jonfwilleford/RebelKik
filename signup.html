@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and Title -->
+  <meta charset="UTF-8" />
+  <title>RebelKik Sign Up</title>
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       Sign Up Form Section
+       ========================= -->
+  <form id="signupForm">
+    <h1>Sign Up</h1>
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit" id="signupBtn">Sign Up</button>
+  </form>
+
+  <!-- =========================
+       Firebase SDKs (for Auth & Firestore)
+       ========================= -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- =========================
+       Project JavaScript Files
+       ========================= -->
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+</body>
+<!-- =========================
+     Footer Section
+     ========================= -->
+<footer>
+  <p>&copy; 2023 Rebel Softwre and Development. All rights reserved.</p>
+</footer>
+</html>

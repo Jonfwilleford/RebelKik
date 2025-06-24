@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       Meta and Styles
+       ========================= -->
+  <meta charset="UTF-8" />
+  <title>RebelKik Blog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       Main Container (Sidebar + Feed)
+       ========================= -->
+  <div class="container">
+    <!-- =========================
+         Sidebar Section (Profile + New Post)
+         ========================= -->
+    <aside class="sidebar">
+      <div class="user-profile">
+        <img id="userPhoto" src="default-avatar.png" alt="Profile Photo" />
+        <h3 id="username">Loading...</h3>
+      </div>
+
+      <h2>New Post</h2>
+      <form id="postForm">
+        <textarea id="postBody" placeholder="Write your post here..." required></textarea>
+        <button type="submit" id="postBtn">Post</button>
+      </form>
+      <a id="profileBtn" href="profile.html">Profile</a>
+      <button id="logoutBtn">Logout</button>
+    </aside>
+
+    <!-- =========================
+         Main Feed Section (Posts)
+         ========================= -->
+    <main class="main-feed">
+      <h1>RebelKik Blog</h1>
+      <div id="posts" class="posts"></div>
+    </main>
+  </div>
+
+  <!-- =========================
+       Firebase SDK Scripts
+       ========================= -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- =========================
+       Project JavaScript Files
+       ========================= -->
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+  <script src="blog.js"></script>
+</body>
+<!-- =========================
+     Footer Section
+     ========================= -->
+<footer>
+  <p>&copy; 2023 Rebel Softwre and Development. All rights reserved.</p>
+</footer>
+</html>

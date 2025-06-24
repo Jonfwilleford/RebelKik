@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       Meta and Styles
+       ========================= -->
+  <meta charset="UTF-8" />
+  <title>RebelKik Your Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       Profile Container Section
+       ========================= -->
+  <div class="profile-container">
+    <h1>👤 Your Profile</h1>
+
+    <!-- Profile Photo Preview -->
+    <img id="profilePhotoPreview" src="default-avatar.png" alt="Profile Photo" />
+
+    <!-- =========================
+         Profile Edit Form
+         ========================= -->
+    <form id="profileForm">
+      <input type="text" id="usernameInput" placeholder="Username" required />
+      <textarea id="bioInput" placeholder="Short Bio"></textarea>
+      <input type="text" id="locationInput" placeholder="Location (optional)" />
+      <input type="file" id="photoInput" accept="image/*" disabled />
+      <button type="submit">Save Profile</button>
+    </form>
+
+    <br />
+    <!-- Back to Blog Button -->
+    <a href="blog.html" id="backBtn">Back to Blog</a>
+  </div>
+
+  <!-- =========================
+       Firebase SDK Scripts
+       ========================= -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
+
+  <!-- =========================
+       Project JavaScript Files
+       ========================= -->
+  <script src="firebase-config.js"></script>
+  <script src="profile.js"></script>
+</body>
+<!-- =========================
+     Footer Section
+     ========================= -->
+<footer class="footer">
+  <p>&copy; 2023 Rebel Software and Development. All rights reserved.</p>
+</footer>
+</html>

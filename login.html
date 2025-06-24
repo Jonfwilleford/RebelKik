@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================
+       Meta and Styles
+       ========================= -->
+  <meta charset="UTF-8" />
+  <title id="loginH1">RebelKik Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================
+       Login Form Section
+       ========================= -->
+  <form id="loginForm">
+    <h1>Login</h1>
+    <input type="email" id="email" placeholder="Enter Your Email" required />
+    <br>
+    <input type="password" id="password" placeholder="Enter Your Password" required />
+    <br>
+    <button type="submit" class="loginBtn">Login</button>
+  </form>
+
+  <!-- =========================
+       Firebase SDK Scripts
+       ========================= -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <!-- =========================
+       Project JavaScript Files
+       ========================= -->
+  <script src="firebase-config.js"></script>
+  <script src="auth.js"></script>
+
+  <!-- =========================
+       Footer Section
+       ========================= -->
+  <footer>
+    <p>&copy; 2023 Rebel Software and Development. All rights reserved.</p>
+  </footer>
+</body>
+</html>
